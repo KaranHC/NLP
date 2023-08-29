@@ -3,12 +3,13 @@ import logging
 from dotenv import load_dotenv  
 
 # Configure environment variables  
-load_dotenv(dotenv_path='./.env')
+load_dotenv(dotenv_path='./.env.sample')
 
 try:
     OpenAiKey = os.getenv('OpenAiKey')
     OpenAiVersion = os.getenv('OpenAiVersion', "2023-05-15")
     OpenAiDavinci = os.getenv('OpenAiDavinci')
+    OpenAiDavinci2=os.getenv('OpenAiDavinci2')
     OpenAiChat = os.getenv('OpenAiChat')
     OpenAiService = os.getenv('OpenAiService', '')
     OpenAiBase = f"https://{OpenAiService}.openai.azure.com"
