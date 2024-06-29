@@ -1,1 +1,13 @@
 LLM/models/fastAPI/.env
+D:\Git\NLP\.env
+*/.env
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*/.env
