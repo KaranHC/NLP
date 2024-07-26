@@ -2,8 +2,8 @@ from fastapi import FastAPI, APIRouter, Query, HTTPException
 
 from typing import Optional, Any
 
-from app.schemas import RecipeSearchResults, Recipe, RecipeCreate
-from app.recipe_data import RECIPES
+from schemas import RecipeSearchResults, Recipe, RecipeCreate
+from recipe_data import RECIPES
 
 
 app = FastAPI(title="Recipe API", openapi_url="/openapi.json")
@@ -41,7 +41,7 @@ def fetch_recipe(*, recipe_id: int) -> Any:
 @api_router.get("/search/", status_code=200, response_model=RecipeSearchResults)
 def search_recipes(
     *,
-    keyword: Optional[str] = Query(None, min_length=3, examples="chicken"),
+    keyword: Optional[str] = Query(None, min_length=3, examples="Panner"),
     max_results: Optional[int] = 10,
 ) -> dict:
     """

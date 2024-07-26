@@ -6,15 +6,15 @@ from typing import Optional
 RECIPES = [
     {
         "id": 1,
-        "label": "Chicken Vesuvio",
+        "label": "Panner",
         "source": "Serious Eats",
-        "url": "http://www.seriouseats.com/recipes/2011/12/chicken-vesuvio-recipe.html",
+        "url": "http://www.seriouseats.com/recipes/2011/12/Panner-vesuvio-recipe.html",
     },
     {
         "id": 2,
-        "label": "Chicken Paprikash",
+        "label": "Panner Paprikash",
         "source": "No Recipes",
-        "url": "http://norecipes.com/recipe/chicken-paprikash/",
+        "url": "http://norecipes.com/recipe/Panner-paprikash/",
     },
     {
         "id": 3,

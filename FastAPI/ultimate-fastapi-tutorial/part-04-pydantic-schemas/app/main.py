@@ -2,8 +2,8 @@ from fastapi import FastAPI, APIRouter, Query
 
 from typing import Optional
 
-from app.schemas import RecipeSearchResults, Recipe, RecipeCreate
-from app.recipe_data import RECIPES
+from schemas import RecipeSearchResults, Recipe, RecipeCreate
+from recipe_data import RECIPES
 
 
 app = FastAPI(title="Recipe API", openapi_url="/openapi.json")
@@ -41,9 +41,9 @@ def search_recipes(
         None,
         min_length=3,
         openapi_examples={
-            "chickenExample": {
-                "summary": "A chicken search example",
-                "value": "chicken",
+            "PannerExample": {
+                "summary": "A Panner search example",
+                "value": "Panner",
             }
         },
     ),
